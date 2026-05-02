@@ -5,13 +5,13 @@ Robô assistivo desenvolvido para auxiliar pessoas com Alzheimer, promovendo mai
 
 🎯 Funcionalidades
 
-Monitoramento
+-Monitoramento
 
-Interação por voz
+-Interação por voz
 
-Estímulos cognitivos
+-Estímulos cognitivos
 
-Alertas
+-Alertas
 
 💻 Tecnologias
 
@@ -20,5 +20,5 @@ HTML, CSS e JavaScript
 Acesse:
 👉 (https://matheusfaleiroo.github.io/AtlasMind/)
 
-👨‍💻 Autores
+👨‍💻 Autores:
 Matheus Faleiro, Natan Camargo e Rafael Ramos
