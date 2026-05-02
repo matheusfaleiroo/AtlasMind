@@ -1,61 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AtlasMind</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AtlasMind</title>
 
-<link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>AtlasMind</h1>
 
-<body>
+      <button onclick="scrollToSection()">Saiba mais</button>
+    </header>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h2 class="title">O projeto que aquece as suas memórias afetivas</h2>
 
-<header>
-  <h1>AtlasMind</h1>
-  <button onclick="scrollToSection()">Saiba mais</button>
-</header>
+          <p class="subtitle">Sistema inteligente para monitoramento e detecção de desorientação em pacientes com Alzheimer</p>
 
-<section class="hero">
-  <div class="hero-content">
+          <button class="cta" onclick="scrollToSection()">Conheça o projeto</button>
+        <div class="hero-image">
+          <div class="phone floating">
+            <div class="screen">
+              <div class="notification" id="notification">⚠️ Alerta detectado</div>
 
-    <div class="hero-text">
-  <h2 class="title">
-    O projeto que aquece as suas memórias afetivas
-  </h2>
+              <h3>AtlasMind</h3>
+            
+              <p>Paciente: João</p>
+              <p>Localização: Em casa</p>
+              <p id="status">Status: Normal</p>
 
-  <p class="subtitle">
-    Sistema inteligente para monitoramento e detecção de desorientação em pacientes com Alzheimer
-  </p>
+            </div>
+          </div>
+        </div> <!--hero-image-->
+        </div> <!--hero-text-->
+      </div> <!--hero-content-->
+    </section>
 
-  <button class="cta" onclick="scrollToSection()">
-    Conheça o projeto
-  </button>
-</div>
-
-    <div class="hero-image">
-      <div class="phone floating">
-
-        <div class="screen">
-
-  <div class="notification" id="notification">
-    ⚠️ Alerta detectado
-  </div>
-
-  <h3>AtlasMind</h3>
-  <p>Paciente: João</p>
-  <p>Localização: Em casa</p>
-  <p id="status">Status: Normal</p>
-
-</div>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section id="info" class="info-section reveal">
+    <section id="info" class="info-section reveal">
 
   <div class="info-box highlight">
     <h2>Nossa justificativa</h2>
@@ -119,19 +103,19 @@
   <div class="team-container">
 
     <div class="member">
-      <img src="matheus.jpeg">
+      <img src="/img/matheus.jpeg">
       <h3>Matheus</h3>
       <a href="https://www.linkedin.com/in/matheus-faleiro-69413138b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B1FRHt0gHQum4gYwUUqJNFw%3D%3D">LinkedIn</a>
     </div>
 
     <div class="member">
-      <img src="natan.jpeg">
+      <img src="/img/natan.jpeg">
       <h3>Natan</h3>
       <a href="https://www.linkedin.com/in/natan-ciriboli-de-camargo-34a29a306?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2Bx3J2RN3Swa7v%2F7gTwZYxg%3D%3D">LinkedIn</a>
     </div>
 
     <div class="member">
-      <img src="rafael.jpeg">
+      <img src="/img/rafael.jpeg">
       <h3>Rafael</h3>
       <a href="#">LinkedIn</a>
     </div>
