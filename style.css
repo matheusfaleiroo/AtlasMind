@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fa;
+}
+
+/* HEADER */
+header {
+  background: #11324E;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header button {
+  background: #ffcc00;
+  padding: 12px 26px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #1d4e75, #11324E);
+  color: white;
+  padding: 100px 60px;
+}
+
+.hero-image {
+    margin-right: 250px; /* aumenta o espaço da direita → puxa pra esquerda */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between; /* separa esquerda e direita */
+    align-items: flex-start;        /* mantém no topo */
+    gap: 40px;
+}
+
+/* TEXTO */
+.hero-text {
+    max-width: 800px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.hero-text h2 {
+    font-size: 44px;
+    white-space: nowrap;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-top: 5px;
+    white-space: nowrap;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 800;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 38px;
+    max-width: 800px;
+    margin-top: 50px;
+    opacity: 0.9;
+}
+
+.cta {
+    margin-top: 50px;
+    padding: 18px 38px;
+    font-size: 18px;
+    background: #ffcc00;
+    color: #11324E;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cta:hover {
+    transform: scale(1.08);
+}
+/* CELULAR */
+.phone {
+  width: 260px;
+  height: 520px;
+  background: #111;
+  border-radius: 30px;
+  padding: 15px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+
+.screen {
+    background: #11324E;
+    height: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-content {
+  text-align: center;
+}
+
+/* NOTIFICAÇÃO */
+.notification {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100px);
+    background: white;
+    color: #c0392b;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    opacity: 0;
+}
+
+/* SEÇÕES */
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.info-box {
+  background: white;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.info-box:hover {
+  transform: translateY(-5px);
+}
+
+.highlight {
+  background: #11324E;
+  color: white;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  width: 230px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* PROTÓTIPO */
+.produto iframe {
+  width: 50%;
+  height: 500px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.features h2 {
+    margin-bottom: 40px;
+}
+
+.produto h2 {
+    margin-bottom: 100px;
+}
+
+.produto iframe:hover {
+  transform: scale(1.03);
+}
+
+/* EQUIPE */
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.member {
+  transition: 0.3s;
+}
+
+.member:hover {
+  transform: translateY(-10px) scale(1.05);
+}
+
+.member img {
+  width: 120px;
+  border-radius: 50%;
+}
+
+.member a {
+  margin-top: 10px;
+  display: inline-block;
+  background: #11324E;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+.team h2 {
+    margin-bottom: 40px; /* afasta das fotos */
+}
+
+/* ORIENTAÇÃO */
+.orientadores {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.orientacao h2 {
+    margin-bottom: 40px; /* afasta dos orientadores */
+}
+
+/* FOOTER */
+footer {
+  background: #11324E;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+/* ANIMAÇÃO */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  50% { transform: translateY(-15px); }
+}
