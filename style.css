@@ -13,9 +13,26 @@ body {
 header {
   background: #11324E;
   color: white;
-  padding: 20px 40px;
+  padding: 70px 40px;
   display: flex;
+  position: relative;
   justify-content: space-between;
+}
+
+header h1 {
+  font-size: 32px;
+  font-weight: bold;
+  position: relative;
+  left: 11%;
+}
+
+.logo{
+  width: 140px;
+  height: 180px;
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  transform: translate(-50%, -50%);
 }
 
 header button {
@@ -103,15 +120,17 @@ header button {
   border-radius: 30px;
   padding: 15px;
   box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  position: relative;
 }
 
 .screen {
-    background: #11324E;
+    background: white;
+    color: #11324E;
+    font-weight: bold;
     height: 100%;
     border-radius: 20px;
     padding: 20px;
     position: relative;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -134,6 +153,7 @@ header button {
     border-radius: 10px;
     font-size: 13px;
     font-weight: bold;
+    border: solid 2px #11324E;
     box-shadow: 0 5px 20px rgba(0,0,0,0.2);
     opacity: 0;
 }
@@ -144,11 +164,17 @@ section {
   text-align: center;
 }
 
+.info-box h2 {
+    text-align: center;
+}
+
 .info-box {
+  text-align: justify;
   background: white;
   padding: 30px;
   margin: 20px auto;
   max-width: 600px;
+  border: solid 2px #11324E;
   border-radius: 10px;
   transition: 0.3s;
 }
@@ -160,6 +186,7 @@ section {
 .highlight {
   background: #11324E;
   color: white;
+  border: solid 2px black;
 }
 
 /* CARDS */
@@ -173,6 +200,7 @@ section {
   background: white;
   padding: 30px;
   width: 230px;
+  border: solid 2px #11324E;
   border-radius: 12px;
   transition: 0.3s;
 }
